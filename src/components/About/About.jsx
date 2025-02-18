@@ -25,7 +25,7 @@ const About = () => {
               </h1>
               <p className="text-sm md:text-md leading-tight">
                 I have X years of experience building user interfaces using
-                technologies like React, HTML, CSS, JavaScript and ReactJs. I'm
+                technologies like React, HTML, CSS and JavaScript. I'm
                 passionate about creating clean, responsive, and user-friendly
                 interfaces.
               </p>
