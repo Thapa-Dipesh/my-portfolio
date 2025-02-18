@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+* {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
