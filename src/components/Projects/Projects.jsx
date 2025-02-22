@@ -40,16 +40,6 @@ const Projects = () => {
       title: "Blog website",
       description: "this is a blogging website created using HTML, CSS",
     },
-    {
-      imageUrl: "https://images04.nicepage.com/feature/461183/blog.jpg",
-      title: "Blog website",
-      description: "this is a blogging website created using HTML, CSS",
-    },
-    {
-      imageUrl: "https://images04.nicepage.com/feature/461183/blog.jpg",
-      title: "Blog website",
-      description: "this is a blogging website created using HTML, CSS",
-    },
   ];
   return (
     <div id="Projects" className="px-12 mt-24 sm:pt-12  text-[#ccc]">
