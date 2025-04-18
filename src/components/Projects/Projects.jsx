@@ -5,20 +5,20 @@ const Projects = () => {
   const projectDetails = [
     {
       imageUrl:
-        "https://cdn.prod.website-files.com/6657421f71dedfccb6c0511b/670d6c3ec8f6cf2996c40e02_www_viber_com_en__208abcd7fdd1.jpeg",
-      title: "Viber website",
+        "https://mir-s3-cdn-cf.behance.net/projects/404/ad7427180507383.Y3JvcCwxMzQyLDEwNTAsMjksMA.png",
+      title: "Landing Page Design",
       description:
-        "This is a clone of Viber Website created using HTML and CSS.",
-      demoLink: "https://thapa-dipesh.github.io/Website-Clones/viber-clone/",
+        "This is a simple and responsive landing page built using React with TypeScript for enhanced type safety and Tailwind CSS for rapid and utility-first styling.",
+      demoLink: "https://thapa-dipesh.github.io/landing-page",
       codeLink:
-        "https://github.com/Thapa-Dipesh/Website-Clones/tree/main/viber-clone",
+        "https://github.com/Thapa-Dipesh/landing-page",
     },
     {
       imageUrl:
         "https://engineering.fb.com/wp-content/uploads/2020/05/1.-Home-Setting-Light-Mode.png",
       title: "Socialbook website",
       description:
-        "This is a SocialBook website created using HTML, CSS and little JS.",
+        "SocialBook: A basic social networking website built with HTML, CSS, and minimal JavaScript for core interactivity.",
       demoLink:
         "https://thapa-dipesh.github.io/Website-Clones/socialbook-clone/",
       codeLink:
@@ -26,10 +26,20 @@ const Projects = () => {
     },
     {
       imageUrl:
+        "https://cdn.prod.website-files.com/6657421f71dedfccb6c0511b/670d6c3ec8f6cf2996c40e02_www_viber_com_en__208abcd7fdd1.jpeg",
+      title: "Viber website",
+      description:
+        "This project is a static front-end clone of the Viber website, constructed using only HTML for the structure and CSS for its visual styling.",
+      demoLink: "https://thapa-dipesh.github.io/Website-Clones/viber-clone/",
+      codeLink:
+        "https://github.com/Thapa-Dipesh/Website-Clones/tree/main/viber-clone",
+    },
+    {
+      imageUrl:
         "https://media.licdn.com/dms/image/v2/D4D12AQEJnXe9RK5c0A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1680694587353?e=2147483647&v=beta&t=-74iuxwHyCa9jNp6hL4YftNxAcKc-f3HsMEU0f-gv70",
       title: "UsabilityHub website",
       description:
-        "This is a UsabilityHub  website clone created using HTML and CSS.",
+        "This project is a static front-end clone of the UsabilityHub website, constructed using only HTML for the structure and CSS for its visual styling.",
       demoLink:
         "https://thapa-dipesh.github.io/Website-Clones/usabilityhub-clone/",
       codeLink:
@@ -46,13 +56,13 @@ const Projects = () => {
       <h1 className="text-4xl text-center md:text-4xl text-white font-bold">
         Projects
       </h1>
-      <div className="py-16 flex flex-col gap-8 w-full sm:flex-row overflow-auto">
+      <div className="py-16 flex flex-col gap-8 w-full sm:flex-row overflow-auto ">
         {projectDetails.map((item, index) => (
           <div
             key={index}
-            className=" flex flex-wrap flex-col bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl duration-600 hover:scale-102 sm:w-96 sm:flex-none sm:p-4 sm:snap-center ">
+            className="flex flex-wrap flex-col bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl duration-600 hover:scale-102 sm:w-96 sm:flex-none sm:p-4 sm:snap-center ">
             <img
-              className="p-8 rounded-3xl duration-500 cursor-pointer hover:scale-105 sm:p-4"
+              className=" w-full h-[50%] p-8 rounded-3xl duration-500 cursor-pointer hover:scale-105 sm:p-4"
               src={item.imageUrl}
               alt="banner img"
             />
