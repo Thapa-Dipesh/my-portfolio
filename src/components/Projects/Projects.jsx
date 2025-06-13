@@ -5,13 +5,21 @@ const Projects = () => {
   const projectDetails = [
     {
       imageUrl:
+        "https://i.pinimg.com/736x/dd/07/d8/dd07d85ceabbc7dbe17635f51dcdc1ea.jpg",
+      title: "Note Taking App",
+      description:
+        "This is an intuitive and responsive note-taking application built using the MERN stack, leveraging MongoDB for flexible data storage, Express.js and Node.js for a robust backend API, and React for a dynamic and engaging user interface.",
+      demoLink: "https://webnote1.netlify.app/",
+      codeLink: "https://github.com/Thapa-Dipesh/notes-app",
+    },
+    {
+      imageUrl:
         "https://mir-s3-cdn-cf.behance.net/projects/404/ad7427180507383.Y3JvcCwxMzQyLDEwNTAsMjksMA.png",
       title: "Landing Page Design",
       description:
         "This is a simple and responsive landing page built using React with TypeScript for enhanced type safety and Tailwind CSS for rapid and utility-first styling.",
       demoLink: "https://thapa-dipesh.github.io/landing-page",
-      codeLink:
-        "https://github.com/Thapa-Dipesh/landing-page",
+      codeLink: "https://github.com/Thapa-Dipesh/landing-page",
     },
     {
       imageUrl:
@@ -60,7 +68,8 @@ const Projects = () => {
         {projectDetails.map((item, index) => (
           <div
             key={index}
-            className="flex flex-wrap flex-col bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl duration-600 hover:scale-102 sm:w-96 sm:flex-none sm:p-4 sm:snap-center ">
+            className="flex flex-wrap flex-col bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl duration-600 hover:scale-102 sm:w-96 sm:flex-none sm:p-4 sm:snap-center"
+          >
             <img
               className=" w-full h-[50%] p-8 rounded-3xl duration-500 cursor-pointer hover:scale-105 sm:p-4"
               src={item.imageUrl}
@@ -69,10 +78,10 @@ const Projects = () => {
             <h3 className="px-8 text-2xl font-bold leading-normal sm:text-3xl sm:px-4 sm:mt-4">
               {item.title}
             </h3>
-            <p className="px-8 mt-2 text-base leading-tight sm:text-base sm:px-4">
+            <p className="px-8 mt-2 text-gray-400 text-base leading-tight sm:text-base sm:px-4 sm:h-20">
               {item.description}
             </p>
-            <div className="my-10 px-4 flex gap-4 items-center justify-center w-full sm:mt-10">
+            <div className="mt-10 px-4 flex gap-4 items-center justify-center w-full sm:mt-10">
               <button className="text-white py-2 px-4 text-base cursor-pointer sm:text-lg sm:w-1/2 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
                 <a href={item.demoLink} target="_blank">
                   Demo
