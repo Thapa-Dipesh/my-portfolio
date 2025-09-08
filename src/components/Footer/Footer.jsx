@@ -16,7 +16,7 @@ const Footer = () => {
       <ul className="text-sm md:text-xl">
         <li className="flex gap-2 items-center">
           <MdOutlineEmail size={20} />
-          dipesht468@gmal.com
+          dipesht468@gmail.com
         </li>
         <li className="flex gap-2 items-center">
           <CiLinkedin size={20} />
@@ -24,7 +24,7 @@ const Footer = () => {
         </li>
         <li className="flex gap-2 items-center">
           <FaGithub size={20} />
-          github.com
+          <a href="https://github.com/Thapa-Dipesh" target="_blank" rel="noopener noreferrer">github.com</a>
         </li>
       </ul>
     </div>
