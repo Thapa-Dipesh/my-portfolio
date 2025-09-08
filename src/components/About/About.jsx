@@ -11,8 +11,8 @@ const About = () => {
       <div className="sm:flex sm:flex-row sm:w-full justify-around flex-wrap flex-col items-center mt-10">
         <img
           className="sm:h-auto sm:w-1/2 w-full mb-8 cursor"
-          // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOF6CwTEp_5dfdCNrBk-x9L7fvjtOgS5dDWQ&s"
-          src={aboutImg}
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOF6CwTEp_5dfdCNrBk-x9L7fvjtOgS5dDWQ&s"
+          // src={aboutImg}
           alt="about img"
         />
 
@@ -51,7 +51,7 @@ const About = () => {
                 Database
               </h1>
               <p className="text-sm md:text-md leading-tight">
-                I'm familiar with relational databases like MySQL and NoSQL
+                I'm familiar with relational databases like MySQL and postgresql and NoSQL
                 databases like MongoDB. I understand the importance of data
                 storage and retrieval for efficient applications.
               </p>

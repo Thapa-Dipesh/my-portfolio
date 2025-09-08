@@ -68,7 +68,7 @@ const Projects = () => {
         {projectDetails.map((item, index) => (
           <div
             key={index}
-            className="flex flex-wrap flex-col bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl duration-600 hover:scale-102 sm:w-96 sm:flex-none sm:p-4 sm:snap-center"
+            className="h-fit md:h-auto flex flex-wrap flex-col bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl duration-600 hover:scale-102 sm:w-96 sm:flex-none pb-6  sm:snap-center"
           >
             <img
               className=" w-full h-[50%] p-8 rounded-3xl duration-500 cursor-pointer hover:scale-105 sm:p-4"
