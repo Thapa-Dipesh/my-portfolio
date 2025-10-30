@@ -23,6 +23,15 @@ const Projects = () => {
     },
     {
       imageUrl:
+        "https://assets.admiretheweb.com/wp-content/uploads/2021/06/K72.jpg?w=1500&h=750&fit=crop&fp-y=0",
+      title: "Creative Agency Website Clone (K72)",
+      description:
+        "This is a high-fidelity website clone featuring complex, dynamic animations, built using the power of React for a component-based structure, GSAP for smooth, custom timeline animations, and Tailwind CSS for utility-first styling and pixel-perfect responsiveness.",
+      demoLink: "https://k72-ca.netlify.app/",
+      codeLink: "https://github.com/Thapa-Dipesh/k72",
+    },
+    {
+      imageUrl:
         "https://engineering.fb.com/wp-content/uploads/2020/05/1.-Home-Setting-Light-Mode.png",
       title: "Socialbook website",
       description:
