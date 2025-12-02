@@ -13,7 +13,7 @@ const Projects = () => {
     // },
     {
       imageUrl:
-        "https://i.pinimg.com/736x/dd/07/d8/dd07d85ceabbc7dbe17635f51dcdc1ea.jpg",
+        "https://img.freepik.com/free-photo/composition-black-friday-shopping-cart-with-copy-space_23-2148667046.jpg?semt=ais_hybrid&w=740&q=80",
       title: "E-commerce App",
       description:
         "A complete e-commerce website built from the ground up using React and the MERN stack (Node.js, Express.js, MongoDB). This platform handles complex features like user logins, product catalogs, and fast searching. We used Redux Toolkit to manage the site's data efficiently and Tailwind CSS for modern, responsive styling.",
