@@ -3,6 +3,32 @@ import React from "react";
 
 const Projects = () => {
   const projectDetails = [
+    // {
+    //   imageUrl: "https://miro.medium.com/1*k3OU519iKbNHycQXdiRraw.jpeg",
+    //   title: "Learning Management System",
+    //   description:
+    //     "A complete, production-ready Learning Management System (LMS) platform architected for scalability and security. Utilizing the MERN stack, it provides distinct Student and Instructor dashboards with robust, role-specific authentication and authorization. The system integrates Stripe for a verified, secure course enrollment and payment gateway, simulating a real-world educational marketplace.",
+    //   demoLink: "https://lmsappclone.netlify.app/",
+    //   codeLink: "https://github.com/Thapa-Dipesh/lms-app",
+    // },
+    // {
+    //   imageUrl:
+    //     "https://i.pinimg.com/736x/dd/07/d8/dd07d85ceabbc7dbe17635f51dcdc1ea.jpg",
+    //   title: "E-commerce App",
+    //   description:
+    //     "A complete e-commerce website built from the ground up using React and the MERN stack (Node.js, Express.js, MongoDB). This platform handles complex features like user logins, product catalogs, and fast searching. We used Redux Toolkit to manage the site's data efficiently and Tailwind CSS for modern, responsive styling.",
+    //   demoLink: "https://fullstack-find.netlify.app/",
+    //   codeLink: "https://github.com/Thapa-Dipesh/fullstack-finds",
+    // },
+    {
+      imageUrl:
+        "https://miro.medium.com/v2/resize:fit:1358/format:webp/0*GosUnxAuWPrzIeLP",
+      title: "Uber Clone App",
+      description:
+        "I built a full working clone of the Uber app. This project was a great challenge because it required handling real-time data, like tracking the driver's exact location on a map. It lets riders book a trip and drivers accept it instantly, featuring live updates for things like arrival times and payment processing. It’s a great example of building an app that handles two different user types at once.",
+      demoLink: "https://uberrideclone.netlify.app/",
+      codeLink: "https://github.com/Thapa-Dipesh/Uber-Clone-App",
+    },
     {
       imageUrl:
         "https://i.pinimg.com/736x/dd/07/d8/dd07d85ceabbc7dbe17635f51dcdc1ea.jpg",
@@ -11,6 +37,15 @@ const Projects = () => {
         "This is an intuitive and responsive note-taking application built using the MERN stack, leveraging MongoDB for flexible data storage, Express.js and Node.js for a robust backend API, and React for a dynamic and engaging user interface.",
       demoLink: "https://webnote1.netlify.app/",
       codeLink: "https://github.com/Thapa-Dipesh/notes-app",
+    },
+    {
+      imageUrl:
+        "https://media.licdn.com/dms/image/v2/D4D22AQEWLM5SItxnfQ/feedshare-shrink_800/B4DZRf28dpHUAk-/0/1736775027571?e=2147483647&v=beta&t=Hvq_ui2qEQ7j4snvs3psO99YeYdxaXb_eifinD3Ldzw",
+      title: "Employee Management System",
+      description:
+        "A client-side Employee Management System (EMS) built with React and Context API for global state management. Features include CRUD operations and data persistence using LocalStorage.",
+      demoLink: "https://emsappreact.netlify.app/",
+      codeLink: "https://github.com/Thapa-Dipesh/react-ems",
     },
     {
       imageUrl:
@@ -61,11 +96,6 @@ const Projects = () => {
         "https://thapa-dipesh.github.io/Website-Clones/usabilityhub-clone/",
       codeLink:
         "https://github.com/Thapa-Dipesh/Website-Clones/tree/main/usabilityhub-clone",
-    },
-    {
-      imageUrl: "https://images04.nicepage.com/feature/461183/blog.jpg",
-      title: "Blog website",
-      description: "this is a blogging website created using HTML, CSS",
     },
   ];
   return (
