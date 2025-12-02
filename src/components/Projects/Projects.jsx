@@ -11,15 +11,15 @@ const Projects = () => {
     //   demoLink: "https://lmsappclone.netlify.app/",
     //   codeLink: "https://github.com/Thapa-Dipesh/lms-app",
     // },
-    // {
-    //   imageUrl:
-    //     "https://i.pinimg.com/736x/dd/07/d8/dd07d85ceabbc7dbe17635f51dcdc1ea.jpg",
-    //   title: "E-commerce App",
-    //   description:
-    //     "A complete e-commerce website built from the ground up using React and the MERN stack (Node.js, Express.js, MongoDB). This platform handles complex features like user logins, product catalogs, and fast searching. We used Redux Toolkit to manage the site's data efficiently and Tailwind CSS for modern, responsive styling.",
-    //   demoLink: "https://fullstack-find.netlify.app/",
-    //   codeLink: "https://github.com/Thapa-Dipesh/fullstack-finds",
-    // },
+    {
+      imageUrl:
+        "https://i.pinimg.com/736x/dd/07/d8/dd07d85ceabbc7dbe17635f51dcdc1ea.jpg",
+      title: "E-commerce App",
+      description:
+        "A complete e-commerce website built from the ground up using React and the MERN stack (Node.js, Express.js, MongoDB). This platform handles complex features like user logins, product catalogs, and fast searching. We used Redux Toolkit to manage the site's data efficiently and Tailwind CSS for modern, responsive styling.",
+      demoLink: "https://fullstack-find.netlify.app/",
+      codeLink: "https://github.com/Thapa-Dipesh/fullstack-finds",
+    },
     {
       imageUrl:
         "https://miro.medium.com/v2/resize:fit:1358/format:webp/0*GosUnxAuWPrzIeLP",
