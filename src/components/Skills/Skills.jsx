@@ -1,12 +1,10 @@
+import { FaCss3, FaHtml5, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 import {
-  FaCss3,
-  FaFigma,
-  FaHtml5,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-} from "react-icons/fa";
-import { SiMongodb,SiExpress,SiAppwrite,SiTailwindcss } from "react-icons/si";
+  SiMongodb,
+  SiExpress,
+  // SiAppwrite,
+  SiTailwindcss,
+} from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -31,7 +29,7 @@ const Skills = () => {
           <FaNodeJs color="#6CC24A" size={120} />
         </div>
         <div className="flex items-center justify-center bg-gray-800 rounded-lg p-4">
-          <SiExpress  color="#33B24C" size={120} />
+          <SiExpress color="#33B24C" size={120} />
         </div>
         <div className="flex items-center justify-center bg-gray-800 rounded-lg p-4">
           <SiMongodb color="#023430" size={120} />
@@ -39,9 +37,9 @@ const Skills = () => {
         <div className="flex items-center justify-center bg-gray-800 rounded-lg p-4">
           <SiTailwindcss color="#2596be" size={120} />
         </div>
-        <div className="flex items-center justify-center bg-gray-800 rounded-lg p-4">
+        {/* <div className="flex items-center justify-center bg-gray-800 rounded-lg p-4">
           <SiAppwrite color="#FD366E" size={120} />
-        </div>
+        </div> */}
       </div>
     </section>
   );
