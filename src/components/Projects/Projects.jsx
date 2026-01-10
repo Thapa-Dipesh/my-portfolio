@@ -13,8 +13,17 @@ const Projects = () => {
     // },
     {
       imageUrl:
-        "https://img.freepik.com/free-photo/composition-black-friday-shopping-cart-with-copy-space_23-2148667046.jpg?semt=ais_hybrid&w=740&q=80",
+        "https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "E-commerce App",
+      description:
+        "Scalable MERN marketplace featuring a custom REST API and high-performance MongoDB aggregation for product filtering. Implements Redux Toolkit and RTK Query for efficient global state management and a seamless checkout experience.",
+      demoLink: "https://the-mern-store.netlify.app/",
+      codeLink: "https://github.com/Thapa-Dipesh/shopify",
+    },
+    {
+      imageUrl:
+        "https://img.freepik.com/free-photo/composition-black-friday-shopping-cart-with-copy-space_23-2148667046.jpg?semt=ais_hybrid&w=740&q=80",
+      title: "Full-Stack Find",
       description:
         "A complete e-commerce website built from the ground up using React and the MERN stack (Node.js, Express.js, MongoDB). This platform handles complex features like user logins, product catalogs, and fast searching. We used Redux Toolkit to manage the site's data efficiently and Tailwind CSS for modern, responsive styling.",
       demoLink: "https://fullstack-find.netlify.app/",
