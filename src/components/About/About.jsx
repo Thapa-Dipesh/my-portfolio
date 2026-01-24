@@ -1,4 +1,4 @@
-import aboutImg from "../../assets/about.jpg";
+import aboutImg from "../../assets/my-image.png";
 import { IoArrowForward } from "react-icons/io5";
 const About = () => {
   return (
@@ -11,8 +11,8 @@ const About = () => {
       <div className="sm:flex sm:flex-row sm:w-full justify-around flex-wrap flex-col items-center mt-10">
         <img
           className="sm:h-auto sm:w-1/2 w-full mb-8 cursor"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOF6CwTEp_5dfdCNrBk-x9L7fvjtOgS5dDWQ&s"
-          // src={aboutImg}
+          // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOF6CwTEp_5dfdCNrBk-x9L7fvjtOgS5dDWQ&s"
+          src={aboutImg}
           alt="about img"
         />
 
