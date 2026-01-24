@@ -20,7 +20,7 @@ const Footer = () => {
         </li>
         <li className="flex gap-2 items-center">
           <CiLinkedin size={20} />
-          linkedin.com
+          <a href="https://www.linkedin.com/in/dipesh-thapa-095250232/" target="_blank" rel="noopener noreferrer">linkedin.com</a>
         </li>
         <li className="flex gap-2 items-center">
           <FaGithub size={20} />
