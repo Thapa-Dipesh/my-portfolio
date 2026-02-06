@@ -1,5 +1,5 @@
-import React from "react";
 // import ProjectCard from "./ProjectCard";
+import watchly from "../../assets/watchly.png";
 
 const Projects = () => {
   const projectDetails = [
@@ -11,6 +11,23 @@ const Projects = () => {
     //   demoLink: "https://lmsappclone.netlify.app/",
     //   codeLink: "https://github.com/Thapa-Dipesh/lms-app",
     // },
+    // {
+    //   imageUrl:
+    //     "https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    //   title: "Real-time SaaS Platform",
+    //   description:
+    //     "A high-performance full-stack platform for real-time content management, leveraging Next.js 16 Server Actions and a reactive backend for seamless, instant user collaboration.",
+    //   demoLink: "https://the-mern-store.netlify.app/",
+    //   codeLink: "https://github.com/Thapa-Dipesh/realtime-nextjs-16-saas",
+    // },
+    {
+      imageUrl: watchly, // A high-quality watch/product image
+      title: "Watchly: Next.js 15 Marketplace",
+      description:
+        "A high-performance e-commerce platform leveraging Next.js 15 Server Actions and MongoDB for seamless, zero-API-overhead CRUD operations. Features a mobile-responsive UI with React Suspense for optimized asynchronous data fetching and instant search functionality.",
+      demoLink: "https://next-watchly.netlify.app/",
+      codeLink: "https://github.com/Thapa-Dipesh/watchly",
+    },
     {
       imageUrl:
         "https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -108,38 +125,60 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="Projects" className="px-12 mt-24 sm:pt-12  text-[#ccc]">
-      <h1 className="text-4xl text-center md:text-4xl text-white font-bold">
-        Projects
-      </h1>
-      <div className="py-16 flex flex-col gap-8 w-full sm:flex-row overflow-auto ">
+    <div
+      id="Projects"
+      className="px-6 md:px-12 mt-32 text-[#ccc] max-w-7xl mx-auto"
+    >
+      <div className="flex flex-col items-center mb-12">
+        <h1 className="text-4xl md:text-5xl text-white font-extrabold tracking-tight">
+          Featured Projects
+        </h1>
+        <div className="h-1 w-20 bg-[#465697] mt-4 rounded-full"></div>
+      </div>
+
+      {/* Grid Container: Flex on mobile for scroll, Grid on Desktop for stability */}
+      <div className="py-8 flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full overflow-x-auto sm:overflow-visible snap-x">
         {projectDetails.map((item, index) => (
           <div
             key={index}
-            className="h-fit md:h-auto flex flex-wrap flex-col bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl duration-600 hover:scale-102 sm:w-96 sm:flex-none pb-6  sm:snap-center"
+            className="group flex flex-col bg-[#111422] border border-slate-800 shadow-2xl rounded-2xl transition-all duration-500 hover:border-[#465697]/50 hover:shadow-[#465697]/10 w-[85vw] sm:w-auto flex-none snap-center"
           >
-            <img
-              className=" w-full h-[50%] p-8 rounded-3xl duration-500 cursor-pointer hover:scale-105 sm:p-4"
-              src={item.imageUrl}
-              alt="banner img"
-            />
-            <h3 className="px-8 text-2xl font-bold leading-normal sm:text-3xl sm:px-4 sm:mt-4">
-              {item.title}
-            </h3>
-            <p className="px-8 mt-2 text-gray-400 text-base leading-tight sm:text-base sm:px-4 sm:h-20">
-              {item.description}
-            </p>
-            <div className="mt-10 px-4 flex gap-4 items-center justify-center w-full sm:mt-10">
-              <button className="text-white py-2 px-4 text-base cursor-pointer sm:text-lg sm:w-1/2 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
-                <a href={item.demoLink} target="_blank">
-                  Demo
+            {/* Image Container with Overlay */}
+            <div className="relative overflow-hidden rounded-t-2xl aspect-video">
+              <img
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                src={item.imageUrl}
+                alt={item.title}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c0e19] to-transparent opacity-60"></div>
+            </div>
+
+            {/* Content Section */}
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#465697] transition-colors">
+                {item.title}
+              </h3>
+              <p className="text-gray-400 text-sm md:text-base leading-relaxed line-clamp-3 mb-6">
+                {item.description}
+              </p>
+
+              {/* Buttons Pushed to Bottom */}
+              <div className="mt-auto flex gap-3">
+                <a
+                  href={item.demoLink}
+                  target="_blank"
+                  className="flex-1 text-center text-white py-2.5 px-4 text-sm font-bold rounded-xl bg-[#465697] hover:bg-[#3b4880] transition-all active:scale-95 shadow-lg shadow-[#465697]/20"
+                >
+                  Live Demo
                 </a>
-              </button>
-              <button className="text-white py-2 px-4 text-base cursor-pointer sm:text-lg sm:w-1/2 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
-                <a href={item.codeLink} target="_blank">
+                <a
+                  href={item.codeLink}
+                  target="_blank"
+                  className="flex-1 text-center text-white py-2.5 px-4 text-sm font-bold rounded-xl border border-slate-700 hover:bg-slate-800 transition-all active:scale-95"
+                >
                   Source Code
                 </a>
-              </button>
+              </div>
             </div>
           </div>
         ))}
