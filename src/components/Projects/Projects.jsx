@@ -1,5 +1,6 @@
 // import ProjectCard from "./ProjectCard";
 import watchly from "../../assets/watchly.png";
+import kodexImage from "../../assets/kodex-cover-img.png";
 
 const Projects = () => {
   const projectDetails = [
@@ -21,12 +22,20 @@ const Projects = () => {
     //   codeLink: "https://github.com/Thapa-Dipesh/realtime-nextjs-16-saas",
     // },
     {
-      imageUrl: watchly, // A high-quality watch/product image
+      imageUrl: watchly,
       title: "Watchly: Next.js 15 Marketplace",
       description:
         "A high-performance e-commerce platform leveraging Next.js 15 Server Actions and MongoDB for seamless, zero-API-overhead CRUD operations. Features a mobile-responsive UI with React Suspense for optimized asynchronous data fetching and instant search functionality.",
       demoLink: "https://next-watchly.netlify.app/",
       codeLink: "https://github.com/Thapa-Dipesh/watchly",
+    },
+    {
+      imageUrl: kodexImage,
+      title: "KODEX | Full-Stack Blog Engine",
+      description:
+        "A high-performance, SEO-optimized blogging platform built with a focus on developer experience and secure data management. KODEX features a custom-built CMS architecture that allows for seamless content creation, category filtering, and author management.",
+      demoLink: "https://mykodex.netlify.app",
+      codeLink: "https://github.com/Thapa-Dipesh/blog-task",
     },
     {
       imageUrl:
